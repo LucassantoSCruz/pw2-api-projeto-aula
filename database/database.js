@@ -14,13 +14,14 @@ PARAMETROS DO SEQUELIZE
 */
 
 const connection = new Sequelize(
-                                      'bd_libri_api',
-                                      'root',
-                                      '',
-                                     {
-                                           host:'localhost',
-                                          dialect:'mysql'
-                                       }
-                                    );
+    'bd_libri_api',
+    'root',
+    '',
+    {
+    host:'localhost',
+    dialect:'mysql',
+    timezone: '-03:00'
+    }
+    );
 
-module.exports = connection
+module.exports = connection;

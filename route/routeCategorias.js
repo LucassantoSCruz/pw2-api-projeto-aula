@@ -1,6 +1,8 @@
 /*IMPORTA O PACOTE DO EXPRESS PARA O SCRIPT index.js*/
 const express = require('express');
 
+const modelCategoria = require('../model/modelCategorias');
+
 /*GERENCIADOR DE ROTAS DO EXPRESS*/
 const router = express.Router();
 
@@ -27,4 +29,4 @@ router.delete('/excluirCategoria', (req, res)=>{
   res.send('ROTA DE EXCLUSÃO DE CATEGORIA');
 });
 
-modules.exports = router;
+module.exports = router;
