@@ -5,6 +5,8 @@ const routeCategoria = require('./route/routeCategorias');
 /*TORNA O EXPRESS EXECUTAVEL DENTRO DO SCRIPT index.js ATRAVÉS DA CONSTANTE app */
 const app = express();
 
+app.use(express.json());
+
 app.use('/', routeCategoria);
 
 /* EXEMPLOS DE ROTA

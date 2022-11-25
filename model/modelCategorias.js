@@ -15,7 +15,7 @@ PARAMETROS DO MÉTODO DEFINE
 const modelCategoria = connection.define(
     'tbl_categoria',
     {
-        code_categoria:{
+        cod_categoria:{
             type: Sequelize.INTEGER,
             primaryKey: true,
             autoIncrement: true
@@ -27,6 +27,6 @@ const modelCategoria = connection.define(
     }
 );
 
-modelCategoria.sync({force:true});
+//modelCategoria.sync({force:true});
 
 module.exports = modelCategoria;
